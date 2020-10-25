@@ -114,14 +114,16 @@ int main(int argc, char *argv[])
 
 	int ret = bind(sockfd, (struct sockaddr*) &serv_addr, sizeof(serv_addr));
 
-	if (ret < 0)	
-	{
-		error("Error in binding the socket");
-	}
-	else
-	{
-		printf("Socket Binding is Successful !!\n");
-	}
+if (ret < 0)
+{
+	error("Server failed to bind \n");
+	exit(1);
+}
+else
+{
+	printf("server is running at Port Number %d\n",portnumber);
+}
+
 /* listen to maximum backlog connections
 	-> listen system call
 */
