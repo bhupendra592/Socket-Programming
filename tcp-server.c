@@ -2,18 +2,16 @@
 Socket Programming -  Fundamentals
 Writing a basic TCP-Server
 Maintained by : Bhupendra Pratap Singh
-/*
-#include <stdio.h>
-/*
-Socket Header files
 */
+
+//Socket Header files
 #include <sys/types.h>          
 #include <sys/socket.h>
 #include <strings.h>		//bzero API(s)
 #include <unistd.h>		//read system call
 #include <stdlib.h>	//exit
 #include <netinet/in.h>	//structure member
-
+#include <stdio.h>
 /*
 Error Handler/routine
 */
@@ -150,7 +148,7 @@ if(readbytes < 0)
 
 printf("The msg rececived: %s\n ", buffer);
 
-char successmsg[1024] = "Cheers !!Received your msg";
+char successmsg[1024] = "Cheers !!Received your msg\n";
 
 int writebytes;
 writebytes = write(connfd,successmsg, sizeof(successmsg));

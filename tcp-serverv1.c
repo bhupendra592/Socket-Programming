@@ -6,11 +6,10 @@
   To Close the telnet connection use ctrl + ] 
   in telnet > type close 
   maintained by : Bhupendra Pratap Singh <bhupendra.jmd@gmail.com>
-/*
-#include <stdio.h>
-/*
-Socket Header files
 */
+
+//Socket Header files
+#include <stdio.h>
 #include <sys/types.h>          
 #include <sys/socket.h>
 #include <strings.h>		//bzero API(s)
