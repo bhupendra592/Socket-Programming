@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	Socket Structure - Refer:
 	man 7 ip
 	*/
-	//Creation of Socket
+	//condition test for entering port number through command line argument
 if (argc < 2)
 	{
 		printf("Error !! Enter Port Number\n");
