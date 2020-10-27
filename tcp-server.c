@@ -148,7 +148,7 @@ if(readbytes < 0)
 
 printf("The msg rececived: %s\n ", buffer);
 
-char successmsg[1024] = "Cheers !!Received your msg\n";
+char successmsg[1024] = "Cheers !! Received your msg\n";
 
 int writebytes;
 writebytes = write(connfd,successmsg, sizeof(successmsg));
@@ -157,6 +157,7 @@ if (writebytes < 0)
 {
 	error("Error in Write");
 }
+
 close(connfd);
 close(sockfd);
 return 0;
